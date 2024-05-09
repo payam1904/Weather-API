@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Weather App</title>
+</head>
+
+<body>
+    <div id="search-box">
+        <input id="search-input" type="text" placeholder="Where? ">
+        <button id="search-btn" type="button">Search</button>
+    </div>
+
+    <div id="result-box">
+        <div class="title"> City Name </div>
+        <div class="temperature"> Temperature </div>
+        <div class="real-feel"> Real Feel </div>
+        <div class="icon">
+            <img id="icon-img" src="" alt="icon">
+        </div>
+        <div class="description"> Description </div>
+
+    </div>
+
+    <div class="overlay"></div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="index.js"></script>
+
+</html>
