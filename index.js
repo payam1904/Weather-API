@@ -45,8 +45,8 @@ function updateScreen() {
             console.log(data);
             convertedIcon = `http://openweathermap.org/img/wn/${data.icon}.png`
             $(".title").html(data.cityName)
-            $(".temperature").html(data.temp)
-            $(".real-feel").html(`Real Feel: ${data.realFeel}`)
+            $(".temperature").html(Math.round(data.temp))
+            $(".real-feel").html(`Real Feel: ${Math.round(data.realFeel)}`)
             $("#icon-img").attr('src', convertedIcon)
             $(".description").html(data.description)
 
